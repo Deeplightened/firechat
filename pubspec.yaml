@@ -1,0 +1,114 @@
+name: firechat
+description: A demo chat app using Firebase
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+  # I18n
+  # To trigger localization file generation : flutter gen-l10n
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.17.0-nullsafety.2
+
+  # Service locator / dependency injection
+  get_it: ^5.0.0
+
+  # State management
+  flutter_bloc: ^6.1.1
+  shared_preferences: ^0.5.12+4
+
+  # Logging
+  logger: ^0.9.4
+
+  # Dart code helpers
+  catcher: ^0.3.11 # Exception management
+  json_annotation: ^3.1.0 # Give annotation to simplify data model JSON parsing
+  email_validator: ^1.0.5
+  uuid: 2.2.2
+
+  # Firebase
+  firebase_core: ^0.5.3
+  firebase_auth: ^0.18.4
+  firebase_storage: ^5.2.0
+  cloud_firestore: ^0.14.4
+
+  image_picker: ^0.6.7+15
+
+dependency_overrides:
+  intl: 0.17.0-nullsafety.2
+
+dev_dependencies:
+  test: 1.15.7
+  mockito: 4.1.1
+
+  # To build with build_runner : flutter packages pub run build_runner build
+  # To watch with build_runner : flutter packages pub run build_runner watch
+  build_runner: ^1.10.6
+
+  # Used with build_runner to generate JSON parsing functions for data model class
+  # annotated with json_annotation
+  json_serializable: ^3.5.0
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  generate: true
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

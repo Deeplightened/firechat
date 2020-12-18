@@ -1,0 +1,41 @@
+{
+  "@@locale": "en",
+
+  "name": "Name",
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm password",
+  "signIn": "Sign in",
+  "createAccount": "Create account",
+  "noAccount": "No account ? Register here",
+  "alreadyHaveAccount": "Have an account already ?",
+  "validate": "Validate",
+
+  "errorEmailInvalid": "This email is invalid, please type a correct email address.",
+  "errorFieldEmpty": "This field cannot be empty.",
+  "errorPasswordNotMatching": "Passwords doesn't match, please re-type them.",
+  "errorPasswordEmpty": "Please type your password here.",
+  "errorPasswordInvalid": "Your password cannot have less than 8 characters.",
+
+  "homeChatTitle": "Chat",
+  "homeContactsTitle": "Contacts",
+  "homeProfileTitle": "Profile",
+
+  "nameChange": "Change name",
+  "nameChangeMessage": "Indicate here a new name you want to use for your account.",
+  "emailChange": "Change email",
+  "emailChangeMessage": "Indicate here a new email you want to use for your account. This email will also be the one you will connect with.",
+  "passwordChange": "Change password",
+  "passwordChangeMessage": "Indicate here a new password you want to use for your account.",
+  "oldPassword": "Old password",
+  "newPassword": "New password",
+  "editProfile": "Edit profile",
+  "disconnect": "Disconnect",
+
+  "serviceErrorEmailAlreadyInUse": "The email address is already used by another account.",
+  "serviceErrorWrongPassword": "The password is invalid or the user does not have a password.",
+  "serviceErrorNetworkRequestFailed": "A network error has occurred. Please verify your network is stable and try again.",
+  "serviceErrorQuotaExceeded": "The project's quota has been exceeded. Please contact the application administrator.",
+  "serviceErrorUserNotFound": "This user doesn't exists.",
+  "serviceErrorUnknown": "An unknown error has occurred. Please contact the application administrator."
+}
