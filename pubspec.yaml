@@ -11,7 +11,7 @@ description: A demo chat app using Firebase
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 0.0.1+3
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
@@ -25,7 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
 
   # I18n
-  # To trigger localization file generation : flutter gen-l10n
+  # To trigger localization file generation : flutter gen-l10n --arb-dir lib/common/l10n
   flutter_localizations:
     sdk: flutter
   intl: 0.17.0-nullsafety.2
@@ -61,7 +61,7 @@ dev_dependencies:
   test: 1.15.7
   mockito: 4.1.1
 
-  # To build with build_runner : flutter packages pub run build_runner build
+  # To build with build_runner : flutter packages pub run build_runner build --delete-conflicting-outputs
   # To watch with build_runner : flutter packages pub run build_runner watch
   build_runner: ^1.10.6
 

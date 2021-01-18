@@ -4,6 +4,7 @@ import 'package:firechat/views/auth/login_page.dart';
 import 'package:firechat/views/common/theme/colors.dart';
 import 'package:firechat/views/home/home_page.dart';
 import 'package:firechat/views/landing/landing_page.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -31,7 +32,7 @@ class App extends StatelessWidget {
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
           navigatorKey: _navigatorKey,
-          title: "Firechat",
+          title: (kDebugMode) ? "Firechat debug" : "Firechat",
           localizationsDelegates: [
             AppLocalizations.delegate,
             GlobalMaterialLocalizations.delegate,

@@ -28,6 +28,17 @@ doc/api/
 # Google services files
 google-services.json
 
+# Secrets
+android/secret
+ios/secret
+
+# Fastlane
+android/fastlane/report.xml
+ios/fastlane/report.xml
+ios/fastlane/Preview.html
+ios/fastlane/metadata/review_information
+ios/fastlane/metadata/trade_representative_contact_information
+
 ### Flutter ###
 # Flutter/Dart/Pub related
 **/doc/api/

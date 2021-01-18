@@ -1,0 +1,42 @@
+# Update fastlane automatically
+update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Build android staging aab"
+  lane :buildStaging do |options|
+    sh "./flutter_test.sh"
+    # Build AAB
+    sh "./flutter_build.sh --clean --staging"
+  end
+
+  desc "Build android prod aab"
+    lane :buildProd do |options|
+      sh "./flutter_test.sh"
+      # Build AAB
+      sh "./flutter_build.sh"
+    end
+
+  desc "Deploy staging (Upload to play store internal channel)"
+  lane :deployStaging do |options|
+    upload_to_play_store(
+      track: 'internal',
+      package_name: 'fr.enlight.firechat.rc',
+      aab: '../build/app/outputs/bundle/stagingRelease/app-staging-release.aab',
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+    )
+  end
+
+  desc "Deploy prod (Upload to play store beta channel)"
+    lane :deployProd do |options|
+      upload_to_play_store(
+        track: 'beta',
+        package_name: 'fr.enlight.firechat',
+        aab: '../build/app/outputs/bundle/prodRelease/app-prod-release.aab',
+        skip_upload_images: true,
+        skip_upload_screenshots: true,
+      )
+    end
+end
